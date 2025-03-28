@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='w-full h-auto md:h-[111px] flex flex-col md:flex-row items-center justify-between px-4 md:px-8 lg:px-12 sticky top-0 z-10'
+        <div className='w-full h-auto md:h-[111px] flex flex-col md:flex-row items-center justify-between px-4 md:px-8 lg:px-12 top-0 z-10'
              style={{ background: 'linear-gradient(89.85deg, #FFFFFF -30.52%, #D4B2D9 163.84%)' }}>
             
             {/* Mobile Header */}
@@ -84,11 +84,10 @@ const Navbar = () => {
                 
                 <NavLink 
                     to={'/contact'} 
-                    className={({isActive}) => getLinkClass({isActive, isPlusIcon: true})}
+                    className={getLinkClass}
                     onClick={() => setIsMenuOpen(false)}
                 >
                     Contact
-                    <Plus size={20} strokeWidth={4} className="inline-block" />
                 </NavLink>
                 
                 {/* Mobile Donate Button */}
