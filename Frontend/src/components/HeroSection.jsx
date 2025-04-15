@@ -22,7 +22,8 @@ const HeroSection = () => {
       <img
         src={images[curr]}
         alt='home'
-        className={`w-full h-[720px] object-cover transition-colors ease-in duration-2000 `}
+        height={700}
+        className={`w-full h-[700px] object-cover transition-colors ease-in duration-2000 `}
       />
       <div className='absolute bottom-8 right-8 flex space-x-3 z-20'>
         {[0, 1, 2].map((val) => (

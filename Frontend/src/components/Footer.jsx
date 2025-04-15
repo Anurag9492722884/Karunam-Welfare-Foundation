@@ -8,8 +8,8 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
     <div>
-      <div className='bg-white py-2'>
-        <div className='container mx-auto flex flex-col md:flex-row justify-between items-center px-10 text-gray-700 text-center'>
+      <div className='bg-white py-1 mt-4 border-0 border-t-[1px] border-t-black'>
+        <div className='container max-w-full mx-auto flex flex-col md:flex-row justify-between px-8 items-center text-gray-700 text-center'>
           {/* Support Message */}
           <div className='flex items-center'>
             <img
