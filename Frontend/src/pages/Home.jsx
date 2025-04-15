@@ -1,9 +1,12 @@
 import React from 'react';
+import HeroSection from '../components/HeroSection';
+import { layer } from '../assets';
 
 const Home = () => {
     return (
-        <div>
-            
+        <div className='min-h-screen '>
+            <HeroSection />
+            <img src={layer} className='w-full h-[90px]' />
         </div>
     );
 }

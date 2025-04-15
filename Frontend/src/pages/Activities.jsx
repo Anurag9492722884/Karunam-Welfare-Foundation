@@ -1,7 +1,6 @@
 import React from 'react'
 import Tag from '../components/Tag'
-import img1 from '../assets/feed_poor.svg'
-import { image2, image3, image4, image5 } from '../assets'
+import {img1,img2,img3,img4,img5,img6,img7,img8,img9 } from '../assets'
 import Donate from '../components/Donate'
 import TagB from '../components/TagB'
 
@@ -17,8 +16,7 @@ const Activities = () => {
 
   return (
     <div
-      className='min-h-screen'
-      style={bgStylea}>
+      className='min-h-screen'>
       {/* Hero section */}
       <div className='flex flex-col space-y-12 max-w-[711px] mx-auto overflow-hidden py-[93px]'>
         <div className='md:flex md:flex-row space-x-3 text-center justify-center'>
@@ -77,9 +75,10 @@ const Activities = () => {
             src={img1}
             alt='Feed Poor Initiative'
             style={{
-              height: '460px',
-              width: '460px',
+              height: '390px',
+              width: '390px',
             }}
+            className='rounded-full'
           />
         </div>
       </div>
@@ -114,12 +113,13 @@ const Activities = () => {
         </div>
         <div>
           <img
-            src={image2}
+            src={img2}
             alt='Cloth Aid Program'
             style={{
-              height: '405px',
-              width: '405px',
+              height: '390px',
+              width: '390px',
             }}
+            className='rounded-full'
           />
         </div>
       </div>
@@ -155,12 +155,13 @@ const Activities = () => {
           </div>
           <div>
             <img
-              src={img1}
+              src={img3}
               alt='Women Economic and Social Development'
               style={{
-                height: '360px',
-                width: '360px',
+                height: '350px',
+                width: '350px',
               }}
+              className='rounded-full'
             />
           </div>
         </div>
@@ -203,12 +204,13 @@ const Activities = () => {
         </div>
         <div>
           <img
-            src={image2}
+            src={img4}
             alt='Women Economic and Social Development'
             style={{
-              height: '405px',
-              width: '405px',
+              height: '390px',
+              width: '390px',
             }}
+            className='rounded-full'
           />
         </div>
       </div>
@@ -242,12 +244,13 @@ const Activities = () => {
           </div>
           <div>
             <img
-              src={image3}
+              src={img5}
               alt='Women Economic and Social Development'
               style={{
-                height: '416px',
-                width: '416px',
+                height: '390px',
+                width: '390px',
               }}
+              className='rounded-full'
             />
           </div>
         </div>
@@ -286,12 +289,13 @@ const Activities = () => {
         </div>
         <div>
           <img
-            src={image4}
+            src={img6}
             alt='Women Economic and Social Development'
             style={{
-              height: '447px',
-              width: '447px',
+              height: '390px',
+              width: '390px',
             }}
+            className='rounded-full'
           />
         </div>
       </div>
@@ -328,12 +332,13 @@ const Activities = () => {
           </div>
           <div>
             <img
-              src={image5}
+              src={img7}
               alt='Women Economic and Social Development'
               style={{
-                height: '470px',
-                width: '470px',
+                height: '390px',
+                width: '390px',
               }}
+              className='rounded-full'
             />
           </div>
         </div>
@@ -372,12 +377,13 @@ const Activities = () => {
         </div>
         <div>
           <img
-            src={image2}
+            src={img8}
             alt='Women Economic and Social Development'
             style={{
-              height: '405px',
-              width: '405px',
+              height: '390px',
+              width: '390px',
             }}
+            className='rounded-full'
           />
         </div>
       </div>
@@ -407,12 +413,13 @@ const Activities = () => {
           </div>
           <div>
             <img
-              src={image5}
+              src={img9}
               alt='Women Economic and Social Development'
               style={{
-                height: '470px',
-                width: '470px',
+                height: '390px',
+                width: '390px',
               }}
+              className='rounded-full'
             />
           </div>
         </div>

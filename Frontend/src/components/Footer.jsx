@@ -51,8 +51,7 @@ const Footer = () => {
       <footer
         className='text-white py-8'
         style={{
-          background:
-            'linear-gradient(180deg, rgba(136, 22, 136, 0.7) 0%, rgba(34, 6, 34, 0.7) 155.42%)',
+          background: 'linear-gradient(1.32deg, rgba(34, 6, 34, 0.9) -10.06%, rgba(136, 22, 136, 0.9) 102.07%)'
         }}>
         <div className='container  flex flex-col md:flex-row justify-around space-x-7 items-center  px-6'>
           {/* Logo & Socials */}
