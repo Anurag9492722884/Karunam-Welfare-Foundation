@@ -16,6 +16,7 @@ const Activities = () => {
 
   return (
     <div
+      style={bgStylea}
       className='min-h-screen'>
       {/* Hero section */}
       <div className='flex flex-col space-y-12 max-w-[711px] mx-auto overflow-hidden py-[93px]'>

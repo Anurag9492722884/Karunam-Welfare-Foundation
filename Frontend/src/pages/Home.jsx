@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className='min-h-screen bg-white'>
             <HeroSection />
-            <div className='max-w-full'><img src={layer} width={1600} className=' max-w-full object-cover h-[90px] border-0' /></div>
+            <div className='max-w-full h-[95px]'><img src={layer} className=' max-w-full md:w-[1550px] object-cover h-[90px] border-0' /></div>
         </div>
     );
 }
