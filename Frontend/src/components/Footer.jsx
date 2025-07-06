@@ -5,6 +5,7 @@ import shield from '../assets/shield-logo.png'
 import book from '../assets/book.png'
 import { facebook, instagram, twitter, whatsapp, youtube } from '../assets'
 import { NavLink } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <div>
@@ -64,7 +65,6 @@ const Footer = () => {
             />
 
             {/* Social Media Icons */}
-            {/* Social Media Icons */}
             <div className='flex gap-3  justify-center'>
               {[
                 { href: '#', icon: facebook },
@@ -108,9 +108,16 @@ const Footer = () => {
           {/* Contact & Address */}
           <div className='text-left w-[200.5px] h-[377.02px] py-8 pt-16'>
             <h3 className='font-normal text-2xl font-tertiary'>Address</h3>
-            <p className=' mt-2 font-default text-[16px]'>Uttar Pradesh</p>
+            <p className='mt-2 font-default text-[16px] leading-relaxed'>
+              Karunam Welfare Foundation<br />
+              A No-403P No-49 B-50, Dallapurwa Hindupur,<br />
+              Bithoor, Kanpur,<br />
+              Uttar Pradesh 209217,<br />
+              India
+            </p>
+
             <h3 className='font-normal text-2xl font-secondary mt-8'>Call us at</h3>
-            <p className=' mt-2 font-secondary text-[16px]'>+91</p>
+            <p className='mt-2 font-secondary text-[16px]'>+91 7607770942</p>
           </div>
         </div>
 
