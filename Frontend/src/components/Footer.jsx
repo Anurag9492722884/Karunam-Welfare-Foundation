@@ -3,7 +3,7 @@ import logo from '../assets/8.svg'
 import thumb from '../assets/left-thumb.png'
 import shield from '../assets/shield-logo.png'
 import book from '../assets/book.png'
-import { facebook, instagram, twitter, whatsapp, youtube } from '../assets'
+import { facebook,linkedin, whatsapp, youtube } from '../assets'
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -64,23 +64,23 @@ const Footer = () => {
               className='w-[277.51px] h-[277.51px]'
             />
 
-            {/* Social Media Icons */}
-            <div className='flex gap-3  justify-center'>
-              {[
-                { href: '#', icon: facebook },
-                { href: '#', icon: twitter },
-                { href: '#', icon: youtube },
-                { href: '#', icon: instagram },
-                { href: '#', icon: whatsapp },
-              ].map(({ href, icon }) => (
-                <a
-                  key={icon}
-                  href={href}
-                  className='w-[40px] h-[41px] flex items-center justify-center bg-white rounded-full shadow-lg hover:scale-110 transition'>
-                  <img src={icon}></img>
-                </a>
-              ))}
-            </div>
+{/* Social Media Icons */}
+<div className='flex gap-3 justify-center'>
+  {[
+    { href: 'https://www.facebook.com/profile.php?id=61575919524882', icon: facebook },
+    { href: 'https://www.linkedin.com/company/karunamwelfarefoundation', icon: linkedin },
+    { href: 'https://www.youtube.com/@KarunamWelfareFoundation', icon: youtube },
+    { href: 'https://whatsapp.com/channel/0029Vb5SbbpHVvTU0rXlD01A', icon: whatsapp },
+  ].map(({ href, icon }) => (
+    <a
+      key={icon}
+      href={href}
+      className='w-[40px] h-[41px] flex items-center justify-center bg-white rounded-full shadow-lg hover:scale-110 transition'
+    >
+      <img src={icon} alt="" className="w-[22px] h-[22px] object-contain" />
+    </a>
+  ))}
+</div>
           </div>
 
           {/* Navigation Links */}
@@ -126,7 +126,7 @@ const Footer = () => {
           {/* Copyright Text */}
           <p className=' text-[16px] font-normal'>
             © 2025{' '}
-            <span className='text-[#83178B] font-bold'>
+            <span className='text-[#ffffff] font-bold'>
               Karunam Welfare Foundation
             </span>{' '}
             All Rights Reserved
@@ -135,14 +135,19 @@ const Footer = () => {
           {/* Privacy & Terms Links */}
           <div className='flex space-x-6 text-[16px] font-normal font-secondary'>
             <a
-              href='#'
+              href='https://merchant.razorpay.com/policy/QYfj0fOAihm7A7/terms'
+              className='hover:text-white transition'>
+              Terms and Conditions
+            </a>
+             <a
+              href='https://merchant.razorpay.com/policy/QYfj0fOAihm7A7/privacy'
               className='hover:text-white transition'>
               Privacy Policy
             </a>
-            <a
-              href='#'
+             <a
+              href='https://merchant.razorpay.com/policy/QYfj0fOAihm7A7/privacy'
               className='hover:text-white transition'>
-              Terms and Conditions
+              Cancellation and Refund Policy
             </a>
           </div>
         </div>
