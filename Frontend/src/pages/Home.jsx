@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className='min-h-screen bg-white'>
             <HeroSection />
-            <div className='max-w-full h-[95px]'><img src={layer} className='bg-gradient-to-r from-pink-100 to-purple-200 max-w-full md:w-[1550px] object-cover h-[90px] border-0' /></div>
+            <div className='w-full h-[60px] sm:h-[70px] md:h-[90px]'><img src={layer} className='bg-gradient-to-r from-pink-100 to-purple-200 w-full object-cover h-full border-0' /></div>
             <HomeAboutUsSection />
             <ProgramSection />
 

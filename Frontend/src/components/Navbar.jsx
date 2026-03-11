@@ -8,14 +8,15 @@ const Navbar = () => {
     // State to control mobile menu
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const commonTextStyles = "font-display text-[21px] leading-[33.28px] capitalize font-normal";
+    // Keep desktop nav items in a single line and slightly smaller so they don't wrap (e.g. "About Us").
+    const commonTextStyles = "font-display text-[18px] lg:text-[19px] leading-[24px] capitalize font-normal whitespace-nowrap";
     const getLinkClass = ({isActive, isPlusIcon = false}) => {
         const baseStyle = isActive 
             ? `${commonTextStyles} rounded-2xl py-2 px-4 bg-[#881688] text-white` 
             : `${commonTextStyles} py-2`;
             
         return isPlusIcon 
-            ? `${baseStyle} flex items-center gap-1` 
+            ? `${baseStyle} inline-flex items-center gap-1` 
             : baseStyle;
     };
 

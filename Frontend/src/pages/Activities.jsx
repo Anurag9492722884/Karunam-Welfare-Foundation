@@ -19,14 +19,14 @@ const Activities = () => {
       style={bgStylea}
       className='min-h-screen'>
       {/* Hero section */}
-      <div className='flex flex-col space-y-12 max-w-[711px] mx-auto overflow-hidden py-[93px]'>
-        <div className='md:flex md:flex-row space-x-3 text-center justify-center'>
-          <div className='font-secondary font-bold text-6xl'>Welcome to </div>
-          <div className='font-default font-bold text-6xl text-[#881688]'>
+      <div className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 max-w-full sm:max-w-[600px] md:max-w-[711px] mx-auto overflow-hidden py-12 sm:py-16 md:py-20 lg:py-[93px] px-4'>
+        <div className='flex flex-col sm:flex-row sm:space-x-3 text-center justify-center gap-2 sm:gap-0'>
+          <div className='font-secondary font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl'>Welcome to </div>
+          <div className='font-default font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#881688]'>
             Karunam
           </div>
         </div>
-        <div className='text-center overflow-hidden font-default font-normal text-[17px]'>
+        <div className='text-center overflow-hidden font-default font-normal text-sm sm:text-base md:text-[17px] px-2'>
           Karunam - 'Compassion in Action' is a unique platform that brings
           together different social causes and issues under a single umbrella.
           We are here to fill the invisible gaps—those that are less spoken
@@ -45,82 +45,74 @@ const Activities = () => {
 
       {/* Section 1: Feed Poor Initiative */}
       <div
-        className='md:flex md:flex-row items-center justify-evenly md:px-8'
+        className='flex flex-col md:flex-row items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 gap-6 md:gap-4'
         style={{ backgroundColor: '#FFFFFF' }}>
-        <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-          <div className='flex flex-col w-fit'>
-            <div className='md:flex md:flex-row space-x-3 text-center'>
-              <div className='font-tertiary font-normal text-5xl'>Feed </div>
+        <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+          <div className='flex flex-col w-full md:w-fit'>
+            <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+              <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>Feed </div>
               <div
-                className='font-default font-normal text-5xl'
+                className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                 style={{ color: '#83178B' }}>
                 Poor Initiative
               </div>
             </div>
-            <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+            <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
               (Physical Quotient)
             </div>
           </div>
-          <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+          <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
             We provide nutritious meals to homeless individuals, ensuring that
             no one goes to bed hungry. Through this initiative, we combat hunger
             and bring hope to those in need, fostering a healthier and more
             compassionate society.
           </div>
-          <div className='w-[191px]'>
+          <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
             <Donate />
           </div>
         </div>
-        <div>
+        <div className='pb-8 md:pb-0'>
           <img
             src={img1}
             alt='Feed Poor Initiative'
-            style={{
-              height: '390px',
-              width: '390px',
-            }}
-            className='rounded-full'
+            className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
           />
         </div>
       </div>
 
       {/* Section 2: Cloth Aid Program */}
       <div
-        className='md:flex md:flex-row-reverse items-center justify-evenly md:px-8'
+        className='flex flex-col md:flex-row-reverse items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 gap-6 md:gap-4'
         style={bgStylea}>
-        <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-          <div className='flex flex-col w-fit'>
-            <div className='md:flex md:flex-row space-x-3 text-center'>
-              <div className='font-tertiary font-normal text-5xl'>Cloth </div>
+        <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+          <div className='flex flex-col w-full md:w-fit'>
+            <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+              <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>Cloth </div>
               <div
-                className='font-default font-normal text-5xl'
+                className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                 style={{ color: '#83178B' }}>
                 Aid Program
               </div>
             </div>
-            <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+            <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
               (Physical Quotient)
             </div>
           </div>
-          <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+          <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
             We offer warmth and protection by distributing blankets and
             essential clothing to those facing harsh weather conditions. This
             initiative helps vulnerable individuals stay safe and comfortable,
             bringing relief during challenging times.
           </div>
-          <div className='w-[191px]'>
+          <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
             <Donate />
           </div>
         </div>
-        <div>
+        <div className='pb-8 md:pb-0'>
           <img
             src={img2}
             alt='Cloth Aid Program'
-            style={{
-              height: '390px',
-              width: '390px',
-            }}
-            className='rounded-full'
+            className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
           />
         </div>
       </div>
@@ -128,41 +120,37 @@ const Activities = () => {
       {/* Section 3: Women Economic and Social Development with overlapping TagB */}
       <div className='relative'>
         <div
-          className='md:flex md:flex-row items-center justify-evenly md:px-8'
+          className='flex flex-col md:flex-row items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 gap-6 md:gap-4'
           style={{ backgroundColor: '#FFFFFF' }}>
-          <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-            <div className='flex flex-col w-fit'>
-              <div className='md:flex md:flex-row space-x-3 text-center'>
-                <div className='font-tertiary font-normal text-5xl'>Women </div>
+          <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+            <div className='flex flex-col w-full md:w-fit'>
+              <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+                <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>Women </div>
                 <div
-                  className='font-default font-normal text-5xl'
+                  className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                   style={{ color: '#83178B' }}>
                   Economic and Social Development
                 </div>
               </div>
-              <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+              <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
                 (Physical Quotient)
               </div>
             </div>
-            <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+            <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
               We empower women by providing skill training and resources to help
               them achieve financial independence. Through vocational programs
               and small business initiatives, we support them in building a
               stable and self-sufficient future.
             </div>
-            <div className='w-[191px]'>
+            <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
               <Donate />
             </div>
           </div>
-          <div>
+          <div className='pb-8 md:pb-0'>
             <img
               src={img3}
               alt='Women Economic and Social Development'
-              style={{
-                height: '350px',
-                width: '350px',
-              }}
-              className='rounded-full'
+              className='rounded-full w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[350px] md:h-[350px] object-cover'
             />
           </div>
         </div>
@@ -175,83 +163,75 @@ const Activities = () => {
 
       {/* Section 4: Empowering Education */}
       <div
-        className='md:flex md:flex-row-reverse items-center justify-evenly md:px-8 pt-8'
+        className='flex flex-col md:flex-row-reverse items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 pt-8 gap-6 md:gap-4'
         style={bgStyleb}>
-        <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-          <div className='flex flex-col w-fit'>
-            <div className='md:flex md:flex-row space-x-3 text-center'>
-              <div className='font-tertiary font-normal text-5xl'>
+        <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+          <div className='flex flex-col w-full md:w-fit'>
+            <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+              <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>
                 Empowering
               </div>
               <div
-                className='font-default font-normal text-5xl'
+                className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                 style={{ color: '#135CAF' }}>
                 Education
               </div>
             </div>
-            <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+            <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
               (Intelligence Quotient)
             </div>
           </div>
-          <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+          <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
             We inspire individuals to lead a meaningful and ethical life through
             engaging discussions on values, principles, and purpose. Our
             sessions encourage integrity, gratitude, and moral strength, helping
             individuals make conscious and responsible choices.
           </div>
-          <div className='w-[191px]'>
+          <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
             <Donate />
           </div>
         </div>
-        <div>
+        <div className='pb-8 md:pb-0'>
           <img
             src={img4}
-            alt='Women Economic and Social Development'
-            style={{
-              height: '390px',
-              width: '390px',
-            }}
-            className='rounded-full'
+            alt='Empowering Education'
+            className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
           />
         </div>
       </div>
 
       {/* Section 5: Skill Training Centres */}
       <div className='relative'>
-        <div className='md:flex md:flex-row items-center justify-evenly md:px-8 pt-8 bg-white'>
-          <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-            <div className='flex flex-col w-fit'>
-              <div className='md:flex md:flex-row space-x-3 text-center'>
-                <div className='font-tertiary font-normal text-5xl'>Skill</div>
+        <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 pt-8 bg-white gap-6 md:gap-4'>
+          <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+            <div className='flex flex-col w-full md:w-fit'>
+              <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+                <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>Skill</div>
                 <div
-                  className='font-default font-normal text-5xl'
+                  className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                   style={{ color: '#135CAF' }}>
                   Training Centres
                 </div>
               </div>
-              <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+              <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
                 (Intelligence Quotient)
               </div>
             </div>
-            <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+            <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
               We offer hands-on training in essential skills, guided by
               experienced professionals, to help individuals secure better
               career opportunities. Our programs equip youth with the knowledge
               and confidence needed to build a successful future.
             </div>
-            <div className='w-[191px]'>
+            <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
               <Donate />
             </div>
           </div>
-          <div>
+          <div className='pb-8 md:pb-0'>
             <img
               src={img5}
-              alt='Women Economic and Social Development'
-              style={{
-                height: '390px',
-                width: '390px',
-              }}
-              className='rounded-full'
+              alt='Skill Training Centres'
+              className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
             />
           </div>
         </div>
@@ -262,84 +242,76 @@ const Activities = () => {
 
       {/* Section 6: Mental Wellness Program */}
       <div
-        className='md:flex md:flex-row-reverse items-center justify-evenly md:px-8 pt-8'
+        className='flex flex-col md:flex-row-reverse items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 pt-8 gap-6 md:gap-4'
         style={bgStylea}>
-        <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-          <div className='flex flex-col w-fit'>
-            <div className='md:flex md:flex-row space-x-3 text-center'>
-              <div className='font-tertiary font-normal text-5xl'>Mental</div>
+        <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+          <div className='flex flex-col w-full md:w-fit'>
+            <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+              <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>Mental</div>
               <div
-                className='font-default font-normal text-5xl'
+                className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                 style={{ color: '#881688' }}>
                 Wellness Programs
               </div>
             </div>
-            <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+            <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
               (Emotional Quotient)
             </div>
           </div>
-          <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+          <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
             We promote emotional well-being through guided self-care practices,
             stress management sessions, and interactive workshops. These
             programs help individuals develop resilience, maintain balance, and
-            navigate life’s challenges with a positive mindset.
+            navigate life's challenges with a positive mindset.
           </div>
-          <div className='w-[191px]'>
+          <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
             <Donate />
           </div>
         </div>
-        <div>
+        <div className='pb-8 md:pb-0'>
           <img
             src={img6}
-            alt='Women Economic and Social Development'
-            style={{
-              height: '390px',
-              width: '390px',
-            }}
-            className='rounded-full'
+            alt='Mental Wellness Programs'
+            className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
           />
         </div>
       </div>
 
       {/* Section 7: Counselling Support */}
       <div className='relative'>
-        <div className='md:flex md:flex-row items-center justify-evenly md:px-8 pt-8 bg-white'>
-          <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-            <div className='flex flex-col w-fit'>
-              <div className='md:flex md:flex-row space-x-3 text-center'>
-                <div className='font-tertiary font-normal text-5xl'>
+        <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 pt-8 bg-white gap-6 md:gap-4'>
+          <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+            <div className='flex flex-col w-full md:w-fit'>
+              <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+                <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>
                   Counselling
                 </div>
                 <div
-                  className='font-default font-normal text-5xl'
+                  className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                   style={{ color: '#881688' }}>
                   Support
                 </div>
               </div>
-              <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+              <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
                 (Emotional Quotient)
               </div>
             </div>
-            <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+            <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
               We provide a supportive environment where individuals can share
               their struggles and receive guidance from trained professionals.
               Our counseling sessions offer clarity, emotional support, and
               practical solutions to help individuals overcome challenges with
               confidence.
             </div>
-            <div className='w-[191px]'>
+            <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
               <Donate />
             </div>
           </div>
-          <div>
+          <div className='pb-8 md:pb-0'>
             <img
               src={img7}
-              alt='Women Economic and Social Development'
-              style={{
-                height: '390px',
-                width: '390px',
-              }}
-              className='rounded-full'
+              alt='Counselling Support'
+              className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
             />
           </div>
         </div>
@@ -350,77 +322,69 @@ const Activities = () => {
 
       {/* Section 8: Value Education */}
       <div
-        className='md:flex md:flex-row-reverse items-center justify-evenly md:px-8 pt-8'
+        className='flex flex-col md:flex-row-reverse items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 pt-8 gap-6 md:gap-4'
         style={bgStyleb}>
-        <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-          <div className='flex flex-col w-fit'>
-            <div className='md:flex md:flex-row space-x-3 text-center'>
-              <div className='font-tertiary font-normal text-5xl'>Value</div>
+        <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+          <div className='flex flex-col w-full md:w-fit'>
+            <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+              <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>Value</div>
               <div
-                className='font-default font-normal text-5xl'
+                className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                 style={{ color: '#135CAF' }}>
                 Education
               </div>
             </div>
-            <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+            <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
               (Spiritual Quotient)
             </div>
           </div>
-          <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+          <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
             We inspire individuals to lead a meaningful and ethical life through
             engaging discussions on values, principles, and purpose. Our
             sessions encourage integrity, gratitude, and moral strength, helping
             individuals make conscious and responsible choices.
           </div>
-          <div className='w-[191px]'>
+          <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
             <Donate />
           </div>
         </div>
-        <div>
+        <div className='pb-8 md:pb-0'>
           <img
             src={img8}
-            alt='Women Economic and Social Development'
-            style={{
-              height: '390px',
-              width: '390px',
-            }}
-            className='rounded-full'
+            alt='Value Education'
+            className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
           />
         </div>
       </div>
 
       {/* Section 9: Mindfulness Retreat */}
-        <div className='md:flex md:flex-row items-center justify-evenly md:px-8 pt-8 bg-white'>
-          <div className='pt-10 md:py-24 flex flex-col space-y-12 w-fit'>
-            <div className='flex flex-col w-fit'>
-              <div className='md:flex md:flex-row space-x-3 text-center'>
-                <div className='font-tertiary font-normal text-5xl'>Mindfulness</div>
+        <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly px-4 sm:px-6 md:px-8 pt-8 bg-white gap-6 md:gap-4 pb-12 md:pb-0'>
+          <div className='pt-10 md:py-24 flex flex-col space-y-6 sm:space-y-8 md:space-y-12 w-full md:w-fit'>
+            <div className='flex flex-col w-full md:w-fit'>
+              <div className='flex flex-col sm:flex-row sm:space-x-3 text-center md:text-left'>
+                <div className='font-tertiary font-normal text-3xl sm:text-4xl md:text-5xl'>Mindfulness</div>
                 <div
-                  className='font-default font-normal text-5xl'
+                  className='font-default font-normal text-3xl sm:text-4xl md:text-5xl'
                   style={{ color: '#135CAF' }}>
                   Retreat
                 </div>
               </div>
-              <div className='text-end italic font-tertiary font-normal text-base text-gray-500'>
+              <div className='text-center md:text-end italic font-tertiary font-normal text-sm sm:text-base text-gray-500'>
                 (Spiritual Quotient)
               </div>
             </div>
-            <div className='font-default font-normal max-w-[620.18px] text-[16.2px]'>
+            <div className='font-default font-normal max-w-full md:max-w-[620.18px] text-sm sm:text-base md:text-[16.2px] text-center md:text-left'>
             We create a peaceful space for self-reflection, meditation, and inner growth. Through guided mindfulness practices, participants cultivate focus, clarity, and a sense of inner harmony, enhancing their overall well-being.
             </div>
-            <div className='w-[191px]'>
+            <div className='w-full sm:w-[191px] mx-auto md:mx-0'>
               <Donate />
             </div>
           </div>
-          <div>
+          <div className='pb-8 md:pb-0'>
             <img
               src={img9}
-              alt='Women Economic and Social Development'
-              style={{
-                height: '390px',
-                width: '390px',
-              }}
-              className='rounded-full'
+              alt='Mindfulness Retreat'
+              className='rounded-full w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[390px] md:h-[390px] object-cover'
             />
           </div>
         </div>
